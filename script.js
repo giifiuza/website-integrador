@@ -23,7 +23,6 @@ function adicionarProduto(e){
 
     atualizacarrinho()    
 
-
 }
 
 function atualizacarrinho(){
