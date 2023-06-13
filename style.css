@@ -769,9 +769,10 @@ footer {
         height: auto;
     }
 
-    #texts-first{ 
+    #texts-first {
         display: none;
     }
+
     #texts-first h1 {
         display: none;
     }
@@ -800,9 +801,11 @@ footer {
     .blog-heading {
         margin-top: 30px;
     }
+
     #collection .all-cards .card-index {
         width: 26rem;
     }
+
     #new-collection {
         display: none;
     }
@@ -813,10 +816,11 @@ footer {
         width: 100%;
     }
 
-    #blog{
+    #blog {
         display: flex;
         flex-direction: column;
     }
+
     .container {
         display: flex;
     }
