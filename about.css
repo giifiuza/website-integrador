@@ -286,6 +286,23 @@ footer{
 }
 
 @media screen and (max-width: 414px) {
+    .navbar-kkk {
+        padding-left: 10px;
+    }
+
+    .logo #img-logo {
+        padding-left: 10px;
+        width: 331px;
+        height: auto;
+    }
+
+    .text-about h1{
+        display: none;
+    }
+    #text{
+        text-align: justify;
+        width: 90%;
+    }
     #final{
         display: flex;
         flex-direction: column;
