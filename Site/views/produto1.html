@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="produto1.css">
-    <link rel="icon" href="./images/icone.jpg" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../assets/css/produto1.css">
+    <link rel="icon" href="../assets/img/icone.jpg" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,6 +16,9 @@
 </head>
 
 <body>
+
+<!-- Menu do site -->
+
   <nav class="navbar navbar-expand-lg bg-body-tertiary logo">
     <div class="container-fluid ">
       <img id="img-logo" src="../assets/img/logo3.png">
@@ -29,7 +30,7 @@
         style="justify-content: end;">
         <ul class="navbar-nav  mb-2 mb-lg-0 menu-bar">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../views/aboutus.html">About us</a>
@@ -49,10 +50,11 @@
     </div>
   </nav>
 
+  <!-- Container com a imagem e informações -->
     <div class="container-prod">
         <div class="produto-descr">
             <div class="imagem">
-                <img src="./images/product3.jpg" alt="Produto 1">
+                <img src="../assets/img/product3.jpg" alt="Produto 1">
             </div>
             <div class="descricao">
                 <h1>Classic Chain Link Gold Bracelet</h1>
@@ -63,12 +65,15 @@
                 </div>
                 <h2 id="price">$40.00</h2>
                 <button class="shop"
-                    onclick="addToCart('Classic Chain Link Gold Bracelet', 40.00, './images/product3.jpg')">SHOP
+                    onclick="addToCart('Classic Chain Link Gold Bracelet', 40.00, '../assets/img/product3.jpg')">SHOP
                     NOW</button>
 
             </div>
         </div>
     </div>
+
+<!-- Bootstrap página carrinho -->
+
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart</h5>
@@ -82,6 +87,9 @@
                 onclick="checkout()">Checkout</button>
         </div>
     </div>
+
+<!-- Modal de compras concluída -->
+
     <div class="modal" id="checkoutModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -100,11 +108,12 @@
         </div>
     </div>
 
+    <!-- Footer -->
 
     <footer>
         <div id=footer_content>
           <div id="footer_contents">
-            <img src="./images/footer-logo.png">
+            <img src="../assets/img/footer-logo.png">
             <p>Shine with style and sophistication, dress in our jewelry.</p>
     
             <div id="footer_social_midia">
@@ -183,8 +192,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-    <script src="./products.js"></script>
-    <script src="./carrinho.js"></script>
+    <script src="../assets/js/products.js"></script>
+    <script src="../assets/js/carrinho.js"></script>
 </body>
 
 </html>

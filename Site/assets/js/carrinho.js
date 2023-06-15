@@ -55,7 +55,7 @@ var cartItems = [];
                         </div>
                         <div class="col-2">
                             <button class="btn btn-danger btn-sm" onclick="removeFromCart('${item.title}')">
-                            <img src="./images/remove.png" alt="Remover" width="20"></button>
+                            <img src="../assets/img/remove.png" alt="Remover" width="20"></button>
                         </div>
                     </div>
                 `;

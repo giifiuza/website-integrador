@@ -2,278 +2,298 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/products.css">
-    <link rel="icon" href="../assets/img/icone.jpg" type="image/png">
-    <title>All products</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/products.css">
+  <link rel="icon" href="../assets/img/icone.jpg" type="image/png">
+  <title>All products</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary logo">
-        <div class="container-fluid ">
-          <img id="img-logo" src="../assets/img/logo3.png">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+
+  <!-- Menu do site -->
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary logo">
+    <div class="container-fluid ">
+      <img id="img-logo" src="../assets/img/logo3.png">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbar-kkk justify-content-end" id="navbarSupportedContent"
+        style="justify-content: end;">
+        <ul class="navbar-nav  mb-2 mb-lg-0 menu-bar">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../views/contact.html">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><img
+                src="../assets/img/shop.png"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Titulo que aparece apenas no mobile -->
+
+  <div id="title-products">
+    <h1>Products</h1>
+  </div>
+
+  <!-- Carrousel -->
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner carrosel">
+      <div class="carousel-item active">
+        <img src="../assets/img/slide1.jpg" alt="Joias Slide 1" height="700" width="100%">
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/img/slide2.jpg" class="d-block" alt="Joias Slide 2" height="700" width="100%">
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/img/slide3.jpg" class="d-block" alt="Joias Slide 3" height="700" width="100%">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Produtos -->
+
+  <section id="cards">
+    <div class="card card-products" style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item1">
+      <a href="./produto1.html">
+        <img src="../assets/img/propro1.jpg" class="card-img-top" alt="Joias"></a>
+      <div class="card-body" id="card-body">
+        <p class="card-text">Classic Chain Link Gold Bracelet</p>
+        <p class="card-text">$40.00</p>
+        <a href="./produto1.html" class="btn btn-primary" id="button">Shop now</a>
+      </div>
+    </div>
+    <div class="card " style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item2">
+      <a href="./produto2.html">
+        <img src="../assets/img/propro2.jpg" class="card-img-top" alt="Joias"></a>
+      <div class="card-body" id="card-body">
+        <p class="card-text">Multi-Link Personalized Gold Necklace</p>
+        <p class="card-text">$150.00</p>
+        <a href="./produto2.html" class="btn btn-primary" id="button">Shop now</a>
+      </div>
+    </div>
+    <div class="card" style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item1">
+      <a href="./produto3.html">
+        <img src="../assets/img/pro1.jpg" class="card-img-top" alt="Joias"></a>
+      <div class="card-body" id="card-body">
+        <p class="card-text">Solitaire Bar Necklace Round Brilliant </p>
+        <p class="card-text">$99.90</p>
+        <a href="./produto3.html" class="btn btn-primary" id="button">Shop now</a>
+      </div>
+    </div>
+  </section>
+  <section id="cards">
+    <div class="card" style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item1">
+      <img src="../assets/img/pro4.jpg" class="card-img-top" alt="Joias">
+      <div class="card-body" id="card-body">
+        <p class="card-text">Aura Solitaire Studs Round Brilliant</p>
+        <p class="card-text">$180.85</p>
+        <a href="#" class="btn btn-primary"
+          onclick="addToCart('Aura Solitaire Studs Round Brilliant', 180.85, '../assets/img/pro4.jpg')" id="button">Shop
+          now</a>
+      </div>
+    </div>
+    <div class="card" style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item1">
+      <img src="../assets/img/pro5.jpg" class="card-img-top" alt="Joias">
+      <div class="card-body" id="card-body">
+        <p class="card-text">Petite Cross Stud</p>
+        <p class="card-text">$68.89</p>
+        <a href="#" class="btn btn-primary" onclick="addToCart('Petite Cross Stud', 68.89, '../assets/img/pro5.jpg')"
+          id="button">Shop now</a>
+      </div>
+    </div>
+    <div class="card" style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item1">
+      <img src="../assets/img/pro6.jpg" class="card-img-top" alt="Joias">
+      <div class="card-body" id="card-body">
+        <p class="card-text">Petite Pavé Bar Stud Round Brilliant</p>
+        <p class="card-text">$258.99</p>
+        <a href="#" class="btn btn-primary"
+          onclick="addToCart('Petite Pavé Bar Stud Round Brilliant', 258.99, '../assets/img/pro6.jpg')" id="button">Shop
+          now</a>
+      </div>
+    </div>
+  </section>
+  <section id="cards">
+    <div class="card" style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item1">
+      <img src="../assets/img/pro7.jpg" class="card-img-top" alt="Joias">
+      <div class="card-body" id="card-body">
+        <p class="card-text">Aura Solitaire Bracelet Round Brilliant </p>
+        <p class="card-text">$ 352.56</p>
+        <a href="#" class="btn btn-primary"
+          onclick="addToCart('Aura Solitaire Bracelet Round Brilliant', 352.56, '../assets/img/pro7.jpg')" id="button">Shop
+          now</a>
+      </div>
+    </div>
+    <div class="card" style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item1">
+      <img src="../assets/img/pro8.jpg" class="card-img-top" alt="Joias">
+      <div class="card-body" id="card-body">
+        <p class="card-text">Aura Solitaire Necklace Round Brilliant</p>
+        <p class="card-text">$105.60</p>
+        <a href="#" class="btn btn-primary"
+          onclick="addToCart('Aura Solitaire Necklace Round Brilliant', 105.60, '../assets/img/pro8.jpg' )" id="button">Shop
+          now</a>
+      </div>
+    </div>
+    <div class="card" style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item1">
+      <img src="../assets/img/pro9.jpg" class="card-img-top" alt="Joias">
+      <div class="card-body" id="card-body">
+        <p class="card-text">The Infinity Band Round Brilliant </p>
+        <p class="card-text">$285.89</p>
+        <a href="#" class="btn btn-primary"
+          onclick="addToCart('The Infinity Band Round Brilliant', 285.89, '../assets/img/pro9.jpg')" id="button">Shop now</a>
+      </div>
+    </div>
+  </section>
+
+<!-- Bootstrap carinho lateral -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul id="listacarrinho" class="list-group"></ul>
+      <p class="total">Total: <span id="cartTotal"></span></p>
+      <button class="btn btn-primary btn-checkout"
+        style="background-color: #ffffff; border: 1px solid #000000; color: #000000;"
+        onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Modal de compra finalizada -->
+
+  <div class="modal" id="checkoutModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Purchase made</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Congratulations! Your purchase was successful.</p>
+          <p>Total: <span id="totalAmount"></span></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+
+  <footer>
+    <div id=footer_content>
+      <div id="footer_contents">
+        <img src="../assets/img/footer-logo.png">
+        <p>Shine with style and sophistication, dress in our jewelry.</p>
+
+        <div id="footer_social_midia">
+          <a href="https://www.instagram.com/gi_fiuzaa/" class="footer-link" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/gifiuzaa/" class="footer-link" id="linkedin">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="https://www.salehriaz.com/404Page/404.html#" class="footer-link" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <ul class="footer-list">
+        <li>
+          <h3>Blog</h3>
+        </li>
+        <li>
+          <a href="../views/index.html#blog" class="footer-link">Jewelry Care</a>
+        </li>
+        <li>
+          <a href="../views/index.html#blog" class="footer-link">How choose a jewelry</a>
+        </li>
+        <li>
+          <a href="../views/index.html#blog" class="footer-link">Trend jewelry</a>
+        </li>
+      </ul>
+      <ul class="footer-list">
+        <li>
+          <h3>Our services</h3>
+        </li>
+        <li>
+          <a href="../views/index.html" class="footer-link">Home</a>
+        </li>
+        <li>
+          <a href="../views/aboutus.html" class="footer-link">About Us</a>
+        </li>
+        <li>
+          <a href="../views/products.html" class="footer-link">Products</a>
+        </li>
+        <li>
+          <a href="../views/contact.html" class="footer-link">Contact Us</a>
+        </li>
+      </ul>
+
+      <div id="footer_subscribe">
+        <h3>Subsribe</h3>
+
+        <p>
+          Enter the e-mail to get notified about new products and news.
+        </p>
+
+        <div id="input-group">
+          <input type="email" id="email">
+          <button onclick="apagar()">
+            <i class="fa-regular fa-envelope"></i>
           </button>
-          <div class="collapse navbar-collapse navbar-kkk justify-content-end" id="navbarSupportedContent"
-            style="justify-content: end;">
-            <ul class="navbar-nav  mb-2 mb-lg-0 menu-bar">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../views/aboutus.html">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../views/products.html">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../views/contact.html">Contact us</a>
-              </li>
-              <li class="nav-item">
-                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><img
-                    src="../assets/img/shop.png"></a>
-              </li>
-            </ul>
-          </div>
+          <script>
+            function apagar() {
+              document.getElementById('email').value = '';
+            }
+          </script>
         </div>
-      </nav>
-    <div id="title-products">
-        <h1>Products</h1>
-        <!-- <img src="./images/produto-list.png"> -->
-    </div>
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner carrosel">
-            <div class="carousel-item active">
-                <img src="./images/slide1.jpg" alt="Joias Slide 1" height="700" width="100%">
-            </div>
-            <div class="carousel-item">
-                <img src="./images/slide2.jpg" class="d-block" alt="Joias Slide 2" height="700" width="100%">
-            </div>
-            <div class="carousel-item">
-                <img src="./images/slide3.jpg" class="d-block" alt="Joias Slide 3" height="700" width="100%">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <section id="cards">
-        <div class="card card-products" style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item1">
-            <a href="./produto1.html">
-                <img src="./images/propro1.jpg" class="card-img-top" alt="Joias"></a>
-            <div class="card-body" id="card-body">
-                <p class="card-text">Classic Chain Link Gold Bracelet</p>
-                <p class="card-text">$40.00</p>
-                <a href="./produto1.html" class="btn btn-primary" id="button">Shop now</a>
-            </div>
-        </div>
-        <div class="card " style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item2">
-            <a href="./produto2.html">
-                <img src="./images/propro2.jpg" class="card-img-top" alt="Joias"></a>
-            <div class="card-body" id="card-body">
-                <p class="card-text">Multi-Link Personalized Gold Necklace</p>
-                <p class="card-text">$150.00</p>
-                <a href="./produto2.html" class="btn btn-primary" id="button">Shop now</a>
-            </div>
-        </div>
-        <div class="card" style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item1">
-            <a href="./produto3.html">
-                <img src="./images/pro1.jpg" class="card-img-top" alt="Joias"></a>
-            <div class="card-body" id="card-body">
-                <p class="card-text">Solitaire Bar Necklace Round Brilliant </p>
-                <p class="card-text">$99.90</p>
-                <a href="./produto3.html" class="btn btn-primary" id="button">Shop now</a>
-            </div>
-        </div>
-    </section>
-    <section id="cards">
-        <div class="card" style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item1">
-                <img src="./images/pro4.jpg" class="card-img-top" alt="Joias">
-            <div class="card-body" id="card-body">
-                <p class="card-text">Aura Solitaire Studs Round Brilliant</p>
-                <p class="card-text">$180.85</p>
-                <a href="#" class="btn btn-primary"
-                    onclick="addToCart('Aura Solitaire Studs Round Brilliant', 180.85, './images/pro4.jpg')" id="button">Shop now</a>
-            </div>
-        </div>
-        <div class="card" style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item1">
-                <img src="./images/pro5.jpg" class="card-img-top" alt="Joias">
-            <div class="card-body" id="card-body">
-                <p class="card-text">Petite Cross Stud</p>
-                <p class="card-text">$68.89</p>
-                <a href="#" class="btn btn-primary" onclick="addToCart('Petite Cross Stud', 68.89, './images/pro5.jpg')"
-                    id="button" >Shop now</a>
-            </div>
-        </div>
-        <div class="card" style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item1">
-                <img src="./images/pro6.jpg" class="card-img-top" alt="Joias">
-            <div class="card-body" id="card-body">
-                <p class="card-text">Petite Pavé Bar Stud Round Brilliant</p>
-                <p class="card-text">$258.99</p>
-                <a href="#" class="btn btn-primary"
-                    onclick="addToCart('Petite Pavé Bar Stud Round Brilliant', 258.99, './images/pro6.jpg')" id="button">Shop now</a>
-            </div>
-        </div>
-    </section>
-    <section id="cards">
-        <div class="card" style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item1">
-                <img src="./images/pro7.jpg" class="card-img-top" alt="Joias">
-            <div class="card-body" id="card-body">
-                <p class="card-text">Aura Solitaire Bracelet Round Brilliant </p>
-                <p class="card-text">$ 352.56</p>
-                <a href="#" class="btn btn-primary"
-                    onclick="addToCart('Aura Solitaire Bracelet Round Brilliant', 352.56, './images/pro7.jpg')"
-                    id="button">Shop now</a>
-            </div>
-        </div>
-        <div class="card" style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item1">
-                <img src="./images/pro8.jpg" class="card-img-top" alt="Joias">
-            <div class="card-body" id="card-body">
-                <p class="card-text">Aura Solitaire Necklace Round Brilliant</p>
-                <p class="card-text">$105.60</p>
-                <a href="#" class="btn btn-primary"
-                    onclick="addToCart('Aura Solitaire Necklace Round Brilliant', 105.60, './images/pro8.jpg' )"
-                    id="button" >Shop now</a>
-            </div>
-        </div>
-        <div class="card" style="width: 25rem;  margin: 30px 30px; padding: 10px 10px;" id="item1">
-                <img src="./images/pro9.jpg" class="card-img-top" alt="Joias">
-            <div class="card-body" id="card-body">
-                <p class="card-text">The Infinity Band Round Brilliant </p>
-                <p class="card-text">$285.89</p>
-                <a href="#" class="btn btn-primary"
-                    onclick="addToCart('The Infinity Band Round Brilliant', 285.89, './images/pro9.jpg')" id="button">Shop now</a>
-            </div>
-        </div>
-    </section>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <ul id="listacarrinho" class="list-group"></ul>
-            <p class="total">Total: <span id="cartTotal"></span></p>
-            <button class="btn btn-primary btn-checkout"
-                style="background-color: #ffffff; border: 1px solid #000000; color: #000000;"
-                onclick="checkout()">Checkout</button>
-        </div>
-    </div>
-    <div class="modal" id="checkoutModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Purchase made</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Congratulations! Your purchase was successful.</p>
-                    <p>Total: <span id="totalAmount"></span></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
+      </div>
+
     </div>
 
-    <footer>
-        <div id=footer_content>
-          <div id="footer_contents">
-            <img src="./images/footer-logo.png">
-            <p>Shine with style and sophistication, dress in our jewelry.</p>
-    
-            <div id="footer_social_midia">
-              <a href="https://www.instagram.com/gi_fiuzaa/" class="footer-link" id="instagram">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-    
-              <a href="https://www.linkedin.com/in/gifiuzaa/" class="footer-link" id="linkedin">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-    
-              <a href="https://www.salehriaz.com/404Page/404.html#" class="footer-link" id="whatsapp">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-            </div>
-          </div>
-          <ul class="footer-list">
-            <li>
-              <h3>Blog</h3>
-            </li>
-            <li>
-              <a href="index.html#blog" class="footer-link">Jewelry Care</a>
-            </li>
-            <li>
-              <a href="index.html#blog" class="footer-link">How choose a jewelry</a>
-            </li>
-            <li>
-              <a href="index.html#blog" class="footer-link">Trend jewelry</a>
-            </li>
-          </ul>
-          <ul class="footer-list">
-            <li>
-              <h3>Our services</h3>
-            </li>
-            <li>
-              <a href="./index.html" class="footer-link">Home</a>
-            </li>
-            <li>
-              <a href="./aboutus.html" class="footer-link">About Us</a>
-            </li>
-            <li>
-              <a href="./products.html" class="footer-link">Products</a>
-            </li>
-            <li>
-              <a href="./contact.html" class="footer-link">Contact Us</a>
-            </li>
-          </ul>
-          
-          <div id="footer_subscribe">
-            <h3>Subsribe</h3>
-    
-            <p>
-              Enter the e-mail to get notified about new products and news.
-            </p>
-    
-            <div id="input-group">
-              <input type="email" id="email">
-              <button onclick="apagar()">
-                <i class="fa-regular fa-envelope"></i>
-              </button>
-              <script>
-                function apagar() {
-                  document.getElementById('email').value = '';
-                }
-              </script>
-            </div>
-          </div>
-    
-        </div>
-    
-        <div id="footer_copyright">
-          &#169
-          Projeto Integrador - Giovanna Fiuza
-        </div>
-      </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="carrinho.js"></script>
+    <div id="footer_copyright">
+      &#169
+      Projeto Integrador - Giovanna Fiuza
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/carrinho.js"></script>
 
 </body>
 
