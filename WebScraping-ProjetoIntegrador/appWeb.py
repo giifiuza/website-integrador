@@ -6,7 +6,7 @@ import pandas as pd
 class Web:
     def __init__(self):
         self.site = {
-            'site': 'https://ornamentum.netlify.app/products.html',
+            'site': 'https://ornamentum.netlify.app/views/products.html',
             'titulo': '/html/body/section[1]/div[$num$]/div/p[1]',
             'titulo2': '/html/body/section[2]/div[$num$]/div/p[1]',
             'titulo3': '/html/body/section[3]/div[$num$]/div/p[1]',
@@ -45,4 +45,5 @@ class Web:
 
     def criarExcel(self):
         excelArq = pd.DataFrame(listar())
-        excelArq.to_excel('Produtos Ornamentum.xlsx')
+        header = ['Título', 'Preço']
+        excelArq.to_excel('Excel-Produtos.xlsx', index=False, header=header)
