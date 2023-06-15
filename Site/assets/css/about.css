@@ -80,7 +80,7 @@ header {
 }
 
 .parallax {
-    background-image: url("./images/paralax.jpg");
+    background-image: url("../img/paralax.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
