@@ -46,6 +46,7 @@ function removeFromCart(title) {
 }
 
 /* Atualiza o carrinho para adicionar outros produtos ou remover */
+
 function updateCart() {
     var cartItemsElement = document.getElementById('listacarrinho');
     var cartTotalElement = document.getElementById('cartTotal');
@@ -104,7 +105,6 @@ function checkout() {
 
     localStorage.removeItem('cartItems');
 }
-
 
 /* Consumindo API  */
 
