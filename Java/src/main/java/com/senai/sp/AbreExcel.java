@@ -21,6 +21,7 @@ public class AbreExcel {
     static List<Produto> listaProdutos = new ArrayList<>();
 
 //    Função para ler o arquivo exel
+
     public static void lerExcel(){
         try {
             FileInputStream arquivo = new FileInputStream(new File(AbreExcel.fileName));
@@ -54,7 +55,7 @@ public class AbreExcel {
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-            System.out.println("Arquivo Excel não encontrado!");
+            System.out.println("Excel not found!");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -62,6 +63,7 @@ public class AbreExcel {
 
 
 //    Função que mostra todos os produtos
+
     public static void mostrarProdutos(){
         Iterator<Produto> itr = listaProdutos.iterator();
 
@@ -74,6 +76,7 @@ public class AbreExcel {
 
 
 //    Função que valida o maior preço
+
     public static void maiorPreco(){
         double maiorPreco = -1;
         String nome = null;
@@ -86,11 +89,12 @@ public class AbreExcel {
                 nome = produto.getNome();
             }
         }
-        System.out.printf("\nO maior preço de um produto é:\n%s - $ %.2f\n", nome, maiorPreco);
+        System.out.printf("\nMore expensive:\n%s - $ %.2f\n", nome, maiorPreco);
     }
 
 
 //    Função que valida menor preco
+
     public static void menorPreco(){
         double menorPreco = -1;
         String nome = null;
@@ -103,22 +107,24 @@ public class AbreExcel {
                 nome = produto.getNome();
             }
         }
-        System.out.printf("\nO menor preço de um produto é:\n%s - $ %.2f\n", nome, menorPreco);
+        System.out.printf("\nMore cheap:\n%s - $ %.2f\n", nome, menorPreco);
     }
 
 
 //    Função que faz a média do preço de todos os produtos
+
     public static void mediaPrecos(){
         double soma = 0, media = 0;
         for (Produto produto:listaProdutos) {
             soma = soma + produto.getPreco();
         }
         media = soma / listaProdutos.size();
-        System.out.printf("\nA média de preço dos produtos é: $ %.2f\n", media);
+        System.out.printf("\n The price average is: $ %.2f\n", media);
     }
 
 
 //    Função principal que chama todas as outras
+
     public static void main(String[] args) {
         lerExcel();
         Scanner entrada = new Scanner(System.in);

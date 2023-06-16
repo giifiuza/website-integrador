@@ -18,6 +18,13 @@ function addToCart(title, price, image) {
             quantity: 1,
             image: image
         };
+    
+        Swal.fire({
+            title: 'Added to cart',
+            imageUrl: '../assets/img/shopping-cart.png',
+            imageWidth: 100,
+            imageHeight: 100,
+          })
         cartItems.push(newItem);
     }
 
