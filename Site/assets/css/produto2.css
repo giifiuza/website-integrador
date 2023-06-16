@@ -114,7 +114,7 @@
 }
 
 .descricao h2 {
-    margin: 3rem 0;
+    margin: 1rem 0;
     font-family: 'Manrope', sans-serif;
     font-weight: bold;
 }
@@ -131,7 +131,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 20%;
-    margin: 3rem;
+    margin: 1rem;
     font-family: 'Manrope', sans-serif;
 }
 
@@ -155,9 +155,9 @@
 .shop {
     border: 3px solid #000000;
     color: #000000;
-    width: 131px;
+    width: 250px;
     height: 47px;
-    border-radius: 40px;
+    border-radius: 20px;
     font-weight: bold;
 }
 
@@ -165,6 +165,33 @@
     color: #ffffff;
     background-color: #000000;
 
+}
+
+.all-cep{
+    padding: 1rem 0;
+    display: flex;
+}
+
+.container .form-group .cep{
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.all-cep .form-group #cepInput{
+    width: 80%;
+}
+
+.all-cep .btn-cep{
+    margin: 2.7rem 0;
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #ffffff;
+}
+.all-cep .btn-cep:hover{
+    background-color: #000000;
+    border: 1px solid #000000;
+    opacity: 0.8;
 }
 
 :root {
